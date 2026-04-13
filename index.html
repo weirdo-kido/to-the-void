@@ -33,6 +33,7 @@ body {
     place-content: center;
     min-height: 100vh;
     margin: 0;
+    padding-top: 48px;
     overflow-x: hidden;
     text-rendering: optimizeSpeed;
 }
@@ -41,13 +42,16 @@ body {
     font-size: 1.2rem;
     letter-spacing: 5px;
     animation: blink 1s steps(2, start) infinite;
+	z-index: 10;
+	padding-bottom: 48px;
 }
 
 @keyframes blink { to { opacity: 0; } }
 
 #app {
-    display: none;
+    display: block;
     width: 90vw;
+    min-height: 100vh;
     max-width: 800px;
 }
 
@@ -70,7 +74,10 @@ h2 {
 .timer {
     font-size: clamp(1.2rem, 4vw, 2.2rem);
     font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.2;
     white-space: nowrap;
+    min-height: 1.5em;
 }
 
 .section-personal .timer { color: var(--personal); }
