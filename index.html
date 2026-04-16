@@ -30,7 +30,7 @@ body {
     background: var(--bg);
     color: var(--text);
     font-family: var(--font-mono);
-    display: flex;
+    display: grid;
     place-content: center;
     height: 100dvh;
     margin: 0;
@@ -49,9 +49,9 @@ body {
 @keyframes blink { to { opacity: 0; } }
 
 #app {
-    display: block;
-    <!-- width: 90vw;
-    min-height: 100vh;
+    display: flex;
+    width: 90vw;
+    <!-- min-height: 100vh;
     max-width: 800px; -->
     padding-bottom: 12px;
     padding-bottom: max(12px, env(safe-area-inset-bottom));
